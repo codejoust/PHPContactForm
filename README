@@ -1,0 +1,25 @@
+A Drop-In PHP Contact form solution.
+
+Object Oriented, allows for validation, and many other things.
+All the files for the form are actually in the cjcf folder, and all the 
+settings needed for the form are in form.inc.php (inside cjcf folder).
+
+To view submissions on your site, just change the pasword in the 
+ViewSubmissions.php file.
+
+For help, email me at http://codejoust.com/contact
+
+Installation
+
+ Open the form.inc.php file, and follow the instructions, for an example 
+of the final page, look at the contactMe.php file.
+
+ To add the form(s) to any page,
+ just put a <?php include_once('cjcf/form.inc.php'); ?>, at the very 
+beginning of your .php contact page (important! no whitespace, breaks, 
+or anything before it. (Replacing the path with the path to this file) 
+rename and copy this form file for a different page.
+ To echo out the form,
+ just put <?php $form->display(); ?>
+
+Hope you enjoy it!
