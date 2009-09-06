@@ -1,0 +1,30 @@
+<?php
+
+$pass = 'test';//Set your password here IMPORTANT!
+$filename = 'submissions.xml';
+
+if (strip_tags($_POST['pass-auth']) = $pass){
+
+$xml = simplexml_load_file($filename);
+
+foreach ($xml->submission as $submission){
+echo('<div class="submission"><h5>'.$submission->attributes()->date.'</h5>');
+
+foreach ($this->fields as $field){
+echo('<p>'.$this->getName().'</p>'
+}
+
+
+}
+$submission->addAttribute('date',date("r"));
+
+
+}
+
+else {
+
+?>
+<form action="." method="post"><label for="pass">Password:</label><input type="text" name="pass-auth" value="" /></form>
+<?php
+
+}
